@@ -2,8 +2,9 @@ import React from 'react'
 import { useParams } from 'react-router-dom'
 import { useFetchBlogByIdQuery } from '../../redux/features/blogs/blogApi'
 import SingleBlogCard from './SingleBlogCard'
-import CommentCard from './comments/commentCard'
+
 import RelatedBlogs from './RelatedBlogs'
+import CommentCard from './comments/CommentCard';
 
 const SingleBlog = () => {
     const {id}=useParams()
